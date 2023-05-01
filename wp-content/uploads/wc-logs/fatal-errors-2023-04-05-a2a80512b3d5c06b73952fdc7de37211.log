@@ -1,0 +1,19 @@
+2023-04-05T07:46:52+00:00 CRITICAL Uncaught Exception: 3.11.3.1 is an invalid version. in /bitnami/wordpress/wp-content/plugins/elementor/core/utils/version.php:94
+Stack trace:
+#0 /bitnami/wordpress/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(69): Elementor\Core\Utils\Version::create_from_string()
+#1 /bitnami/wordpress/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(133): Elementor\Modules\CompatibilityTag\Base_Module->on_plugin_update_message()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(310): Elementor\Modules\CompatibilityTag\Base_Module->Elementor\Modules\CompatibilityTag\{closure}()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /opt/bitnami/wordpress/wp-admin/includes/update.php(589): do_action()
+#6 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(310): wp_plugin_update_row()
+#7 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#8 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /opt/bitnami/wordpress/wp-admin/includes/class-wp-plugins-list-table.php(1357): do_action()
+#10 /opt/bitnami/wordpress/wp-admin/includes/class-wp-plugins-list-table.php(695): WP_Plugins_List_Table->single_row()
+#11 /opt/bitnami/wordpress/wp-admin/includes/class-wp-list-table.php(1444): WP_Plugins_List_Table->display_rows()
+#12 /opt/bitnami/wordpress/wp-admin/includes/class-wp-list-table.php(1371): WP_List_Table->display_rows_or_placeholder()
+#13 /opt/bitnami/wordpress/wp-admin/plugins.php(773): WP_List_Table->display()
+#14 {main}
+  thrown in /bitnami/wordpress/wp-content/plugins/elementor/core/utils/version.php on line 94
+
